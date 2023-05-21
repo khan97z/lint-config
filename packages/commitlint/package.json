@@ -1,0 +1,29 @@
+{
+  "name": "@faxjs/commitlint-config",
+  "version": "0.0.2",
+  "description": "commitlint config of faxjs",
+  "main": "index.js",
+  "scripts": {},
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khan97z/fax.git",
+    "directory": "packages/commitlint"
+  },
+  "bugs": "https://github.com/khan97z/fax/issues",
+  "author": "khan97z",
+  "license": "MIT",
+  "dependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "commitizen": "^4.2.5"
+  },
+  "peerDependencies": {
+    "commitizen": ">=4.2.5",
+    "husky": ">=8.0.0",
+    "czg": ">=1.3.11"
+  }
+}
