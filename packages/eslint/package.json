@@ -1,7 +1,8 @@
 {
   "name": "@faxjs/eslint-config",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "eslint config of faxjs",
+  "homepage": "https://github.com/khan97z/lint-config/tree/master/packages/eslint/README.md",
   "main": "index.js",
   "scripts": {},
   "publishConfig": {
@@ -10,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/khan97z/fax.git",
+    "url": "https://github.com/khan97z/lint-config.git",
     "directory": "packages/eslint"
   },
-  "bugs": "https://github.com/khan97z/fax/issues",
+  "bugs": "https://github.com/khan97z/lint-config/issues",
   "author": "khan97z",
   "license": "MIT",
   "dependencies": {

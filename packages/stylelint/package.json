@@ -1,8 +1,8 @@
 {
   "name": "@faxjs/stylelint-config",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "stylelint config of faxjs",
-  "homepage": "https://github.com/khan97z/lint/blob/master/packages/stylelint/README.md",
+  "homepage": "https://github.com/khan97z/lint-config/tree/master/packages/eslint/README.md",
   "main": "index.js",
   "publishConfig": {
     "access": "public",
@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/khan97z/fax.git",
+    "url": "https://github.com/khan97z/lint-config.git",
     "directory": "packages/stylelint"
   },
-  "bugs": "https://github.com/khan97z/fax/issues",
+  "bugs": "https://github.com/khan97z/lint-config/issues",
   "author": "khan97z",
   "license": "MIT",
   "scripts": {},

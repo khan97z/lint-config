@@ -1,7 +1,8 @@
 {
   "name": "@faxjs/prettier-config",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "prettier config of faxjs",
+  "homepage": "https://github.com/khan97z/lint-config/tree/master/packages/prettier/README.md",
   "main": "index.js",
   "scripts": {},
   "publishConfig": {
@@ -10,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/khan97z/fax.git",
+    "url": "https://github.com/khan97z/lint-config.git",
     "directory": "packages/prettier"
   },
-  "bugs": "https://github.com/khan97z/fax/issues",
+  "bugs": "https://github.com/khan97z/lint-config/issues",
   "author": "khan97z",
   "license": "MIT",
   "peerDependencies": {
