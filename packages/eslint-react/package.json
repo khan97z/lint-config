@@ -1,6 +1,6 @@
 {
   "name": "@faxjs/eslint-config-react",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "eslint react config of faxjs",
   "homepage": "https://github.com/khan97z/lint-config/tree/master/packages/eslint-react/README.md",
   "main": "index.js",

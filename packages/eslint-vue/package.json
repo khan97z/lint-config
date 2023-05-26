@@ -1,6 +1,6 @@
 {
   "name": "@faxjs/eslint-config-vue",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "eslint vue config of faxjs",
   "homepage": "https://github.com/khan97z/lint-config/tree/master/packages/eslint-vue/README.md",
   "main": "index.js",
