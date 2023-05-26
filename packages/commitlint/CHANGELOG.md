@@ -1,1 +1,0 @@
-# @faxjs/commitlint-config

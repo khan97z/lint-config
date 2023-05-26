@@ -1,22 +1,22 @@
-# ESLint Config of Faxjs
+# Prettier Config of Faxjs
 
 ## Install
 
 ```shell
 # with npm
-npm i @faxjs/eslint-config -D
+npm i @faxjs/prettier-config -D
 
 # with yarn
-yarn add @faxjs/eslint-config -D
+yarn add @faxjs/prettier-config -D
 
 # with pnpm
-pnpm add @faxjs/eslint-config -D
+pnpm add @faxjs/prettier-config -D
 ```
 
 ## Usage
 
-```json
+```js
 {
-  "extends": ["@faxjs"]
+  ...require('@jsxiaosi/prettier-config')
 }
 ```

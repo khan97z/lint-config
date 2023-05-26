@@ -1,8 +1,8 @@
 {
-  "name": "@faxjs/prettier-config",
+  "name": "@faxjs/eslint-config-react",
   "version": "1.0.5",
-  "description": "prettier config of faxjs",
-  "homepage": "https://github.com/khan97z/lint-config/tree/master/packages/prettier/README.md",
+  "description": "eslint react config of faxjs",
+  "homepage": "https://github.com/khan97z/lint-config/tree/master/packages/eslint-react/README.md",
   "main": "index.js",
   "author": "khan97z",
   "license": "MIT",
@@ -18,10 +18,11 @@
   },
   "peerDependencies": {
     "eslint": ">=7.4.0",
-    "prettier": ">=2.0.0"
+    "typescript": ">=5.0"
   },
   "dependencies": {
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1"
+    "@faxjs/eslint-config-ts": "workspace:*",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }

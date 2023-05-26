@@ -1,3 +1,25 @@
+// .commitlintrc.js
+// const fs = require('fs');
+// const path = require('path');
+// const { execSync } = require('child_process');
+
+// const scopes = fs.readdirSync(path.resolve(__dirname, 'page'))
+
+// const gitStatus = execSync('git status --porcelain || true')
+//   .toString()
+//   .trim()
+//   .split('\n')
+
+// const scopeComplete = gitStatus
+//   .find((r) => ~r.indexOf('M  page'))
+//   ?.replace(/(\/)/g, '%%')
+//   ?.match(/page%%((\w|-)*)/)?.[1];
+
+// const subjectComplete = gitStatus
+//   .find((r) => ~r.indexOf('M  page'))
+//   ?.replace(/\//g, '%%')
+//   ?.match(/page%%((\w|-)*)/)?.[1]
+
 /** @type {import('cz-git').UserConfig} */
 module.exports = {
   extends: ['@commitlint/config-conventional'],
@@ -15,7 +37,7 @@ module.exports = {
      *      ^^^^^
      */
     // scope：单词格式
-    'scope-case': [2, 'always', 'lower-case'],
+    'scope-case': [2, 'always', ['lower-case', 'upper-case', 'start-case', 'pascal-case']],
     /**
      * subject：commit 描述
      * feat(scope): feat add .....
@@ -53,9 +75,9 @@ module.exports = {
         'revert',
         'chore',
         'wip',
-        'types'
-      ]
-    ]
+        'types',
+      ],
+    ],
   },
   prompt: {
     messages: {
@@ -68,33 +90,57 @@ module.exports = {
       footerPrefixsSelect: '选择关联issue前缀（可选）:',
       customFooterPrefixs: '输入自定义issue前缀 :',
       footer: '列举关联issue (可选) 例如: #31, #I3244 :\n',
-      confirmCommit: '是否提交或修改commit ?'
+      confirmCommit: '是否提交或修改commit ?',
     },
     types: [
-      { value: 'feat', name: 'feat:     新增功能' },
-      { value: 'fix', name: 'fix:      修复缺陷' },
-      { value: 'docs', name: 'docs:     文档变更' },
-      { value: 'style', name: 'style:    代码格式' },
-      { value: 'refactor', name: 'refactor: 代码重构' },
-      { value: 'perf', name: 'perf:     性能优化' },
-      { value: 'test', name: 'test:     添加疏漏测试或已有测试改动' },
+      { value: 'feat', name: 'feat:     新增功能', emoji: '✨' },
+      { value: 'fix', name: 'fix:      修复缺陷', emoji: '🐛' },
+      { value: 'docs', name: 'docs:     文档变更', emoji: '📝' },
+      { value: 'style', name: 'style:    代码格式', emoji: '💄' },
+      { value: 'refactor', name: 'refactor: 代码重构', emoji: '♻️' },
+      { value: 'perf', name: 'perf:     性能优化', emoji: '⚡️' },
+      {
+        value: 'test',
+        name: 'test:     添加疏漏测试或已有测试改动',
+        emoji: '✅',
+      },
       {
         value: 'build',
-        name: 'build:    构建流程、外部依赖变更 (如升级 npm 包、修改打包配置等)'
+        name: 'build:    构建流程、外部依赖变更 (如升级 npm 包、修改打包配置等)',
+        emoji: '📦️',
       },
-      { value: 'ci', name: 'ci:       修改 CI 配置、脚本' },
-      { value: 'revert', name: 'revert:   回滚 commit' },
+      { value: 'ci', name: 'ci:       修改 CI 配置、脚本', emoji: '🛠' },
+      { value: 'revert', name: 'revert:   回滚 commit', emoji: '⏪️' },
       {
         value: 'chore',
-        name: 'chore:    对构建过程或辅助工具和库的更改 (不影响源文件)'
+        name: 'chore:    对构建过程或辅助工具和库的更改 (不影响源文件)',
+        emoji: '🔨',
       },
-      { value: 'wip', name: 'wip:      正在开发中' },
-      { value: 'types', name: 'types:    类型定义文件修改' }
+      { value: 'wip', name: 'wip:      正在开发中', emoji: '🚀' },
+      { value: 'types', name: 'types:    类型定义文件修改', emoji: '💡' },
     ],
     // 是否允许使用Emoji
-    useEmoji: false,
+    useEmoji: true,
+    // Emoji显示位置
+    emojiAlign: 'center',
 
     allowEmptyIssuePrefixs: false,
-    allowCustomIssuePrefixs: false
-  }
-}
+    allowCustomIssuePrefixs: false,
+
+    /**
+     * 高级配置需要自行添加
+     */
+    // // 范围设置
+    // scopes: [...scopes, 'mock'],
+    // // 范围是否可以多选
+    // enableMultipleScopes: true,
+    // // 多选范围后用标识符隔开
+    // scopeEnumSeparator: "," ,
+    // //  设置 选择范围 中 为空选项(empty) 和 自定义选项(custom) 的 位置
+    // customScopesAlign: !scopeComplete ? 'top' : 'bottom',
+    // // 如果 defaultScope 与在选择范围列表项中的 value 相匹配就会进行星标置顶操作。
+    // defaultScope: scopeComplete,
+    // // 描述预设值
+    // defaultSubject: subjectComplete && `[${subjectComplete}] `,
+  },
+};

@@ -1,35 +1,32 @@
 {
   "name": "@faxjs/stylelint-config",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "stylelint config of faxjs",
   "homepage": "https://github.com/khan97z/lint-config/tree/master/packages/eslint/README.md",
   "main": "index.js",
+  "files": [
+    "*.js"
+  ],
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/khan97z/lint-config.git",
-    "directory": "packages/stylelint"
-  },
-  "bugs": "https://github.com/khan97z/lint-config/issues",
   "author": "khan97z",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint . --config=index.js"
+  },
   "dependencies": {
+    "postcss-html": "^1.5.0",
+    "postcss-scss": "^4.0.6",
+    "sass": "^1.58.3",
+    "stylelint": "^14.16.0",
     "stylelint-config-prettier": "^9.0.4",
     "stylelint-config-recess-order": "^3.0.0",
     "stylelint-config-recommended-vue": "^1.4.0",
     "stylelint-config-standard": "^29.0.0",
     "stylelint-config-standard-scss": "^6.1.0",
     "stylelint-prettier": "^2.0.0"
-  },
-  "devDependencies": {
-    "postcss-html": "^1.5.0",
-    "postcss-scss": "^4.0.6",
-    "sass": "^1.58.3",
-    "stylelint": "^14.16.0"
   },
   "peerDependencies": {
     "postcss-html": ">=1.5.0",

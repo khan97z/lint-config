@@ -1,26 +1,26 @@
-const fs = require('fs')
-const path = require('path')
-const { execSync } = require('child_process')
+const fs = require('fs');
+const path = require('path');
+const { execSync } = require('child_process');
 
-const scopes = fs.readdirSync(path.resolve(__dirname, 'packages'))
+const scopes = fs.readdirSync(path.resolve(__dirname, 'packages'));
 
-const gitStatus = execSync('git status --porcelain || true').toString().trim().split('\n')
+const gitStatus = execSync('git status --porcelain || true').toString().trim().split('\n');
 
 const scopeComplete = gitStatus
   .find((r) => ~r.indexOf('M  packages'))
   ?.replace(/(\/)/g, '%%')
-  ?.match(/packages%%((\w|-)*)/)?.[1]
+  ?.match(/packages%%((\w|-)*)/)?.[1];
 
 const subjectComplete = gitStatus
   .find((r) => ~r.indexOf('M  packages'))
   ?.replace(/\//g, '%%')
-  ?.match(/packages%%((\w|-)*)/)?.[1]
+  ?.match(/packages%%((\w|-)*)/)?.[1];
 
 module.exports = {
   extends: ['@faxjs/commitlint-config'],
   prompt: {
     // 范围设置
-    scopes: [...scopes],
+    scopes: [...scopes, 'mock'],
     // 范围是否可以多选
     enableMultipleScopes: true,
     // 多选范围后用标识符隔开
@@ -30,6 +30,6 @@ module.exports = {
     // 如果 defaultScope 与在选择范围列表项中的 value 相匹配就会进行星标置顶操作。
     defaultScope: scopeComplete,
     // 描述预设值
-    defaultSubject: subjectComplete && `[${subjectComplete}] `
-  }
-}
+    defaultSubject: subjectComplete && `[${subjectComplete}] `,
+  },
+};

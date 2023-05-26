@@ -1,22 +1,21 @@
 {
   "name": "@faxjs/commitlint-config",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "commitlint config of faxjs",
   "homepage": "https://github.com/khan97z/lint-config/tree/master/packages/commitlint/README.md",
   "main": "index.js",
-  "scripts": {},
+  "files": [
+    "*.js"
+  ],
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/khan97z/lint-config.git",
-    "directory": "packages/commitlint"
-  },
-  "bugs": "https://github.com/khan97z/lint-config/issues",
   "author": "khan97z",
   "license": "MIT",
+  "scripts": {
+    "lint": "eslint . --config=index.js"
+  },
   "dependencies": {
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
