@@ -17,6 +17,6 @@ pnpm add @faxjs/prettier-config -D
 
 ```js
 {
-  ...require('@jsxiaosi/prettier-config')
+  ...require('@faxjs/prettier-config')
 }
 ```

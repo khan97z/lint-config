@@ -78,7 +78,7 @@ module.exports = {
     // 禁止在规定的参数名称用v-bind
     'vue/no-restricted-v-bind': ['error', '/^v-/'],
     // 强制模板中的组件命名样式执行特定的大小写
-    'vue/component-name-in-template-casing': ['error', 'PascalCase'],
+    'vue/component-name-in-template-casing': ['error', 'kebab-case'],
     // 强制Components在选项中组件名称的大小写
     'vue/component-options-name-casing': ['error', 'PascalCase'],
     // 强制自定义事件名称使用特定大小写

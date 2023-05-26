@@ -8,7 +8,7 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
-    '@jsxiaosi/eslint-config-ts',
+    '@faxjs/eslint-config-ts',
   ],
   plugins: ['react', 'react-hooks'],
   rules: {

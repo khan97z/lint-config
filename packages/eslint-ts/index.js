@@ -3,7 +3,7 @@ const base = require('@faxjs/eslint-config-base');
 // https://typescript-eslint.io/rules
 module.exports = {
   extends: [
-    '@jsxiaosi/eslint-config-base',
+    '@faxjs/eslint-config-base',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
   ],
