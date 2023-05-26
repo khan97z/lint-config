@@ -1,5 +1,11 @@
 # @faxjs/prettier-config
 
+## 1.0.7
+
+### Patch Changes
+
+- trailingComma: 'all' => trailingComma: 'none'
+
 ## 1.0.6
 
 ### Patch Changes

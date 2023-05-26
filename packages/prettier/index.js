@@ -14,7 +14,7 @@ module.exports = {
   // jsx中使用单引号）
   jsxSingleQuote: false,
   // 在对象或数组最后一个元素后面是否加逗号
-  trailingComma: 'all',
+  trailingComma: 'none',
   // 对象属性括号之间打印空格
   proseWrap: 'never',
   // 行 HTML（HTML、JSX、Vue、Angular）元素放在最后一行的末尾，而不是单独放在下一行

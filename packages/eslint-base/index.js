@@ -170,7 +170,7 @@ module.exports = {
       },
     ],
     // 是否禁用分号
-    semi: [2, 'never'],
+    semi: [2, 'always'],
     // 强制 “for” 循环中更新子句的计数器朝着正确的方向移动
     'for-direction': 'error',
     // 强制 getter 函数中出现 return 语句

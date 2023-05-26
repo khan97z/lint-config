@@ -1,6 +1,6 @@
 {
   "name": "@faxjs/eslint-config-ts",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "eslint typescript config of faxjs",
   "homepage": "https://github.com/khan97z/lint-config/tree/master/packages/eslint-ts/README.md",
   "main": "index.js",
