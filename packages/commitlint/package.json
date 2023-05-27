@@ -1,6 +1,6 @@
 {
   "name": "@faxjs/commitlint-config",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "commitlint config of faxjs",
   "homepage": "https://github.com/khan97z/lint-config/tree/master/packages/commitlint/README.md",
   "main": "index.js",

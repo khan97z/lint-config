@@ -8,13 +8,13 @@ module.exports = {
         parser: '@typescript-eslint/parser',
         sourceType: 'module',
         ecmaFeatures: {
-          jsx: true,
-        },
+          jsx: true
+        }
       },
       rules: {
-        'no-undef': 'off',
-      },
-    },
+        'no-undef': 'off'
+      }
+    }
   ],
   // 添加uni-app支持
   globals: {
@@ -25,7 +25,7 @@ module.exports = {
     defineOptions: true,
     defineSlots: true,
     defineExopse: true,
-    withDefaults: true,
+    withDefaults: true
   },
   rules: {
     /* -------------->  Essential        <-------------- */
@@ -48,11 +48,11 @@ module.exports = {
         html: {
           void: 'always',
           normal: 'always',
-          component: 'always',
+          component: 'always'
         },
         svg: 'always',
-        math: 'always',
-      },
+        math: 'always'
+      }
     ],
 
     /* -------------->  Vue2             <-------------- */
@@ -66,8 +66,8 @@ module.exports = {
     'vue/component-tags-order': [
       'error',
       {
-        order: ['script', 'template', 'style'],
-      },
+        order: ['script', 'template', 'style']
+      }
     ],
 
     /* -------------->  Uncategorized    <-------------- */
@@ -87,27 +87,29 @@ module.exports = {
     'vue/define-macros-order': [
       'error',
       {
-        order: ['defineProps', 'defineEmits'],
-      },
+        order: ['defineProps', 'defineEmits']
+      }
     ],
     // 统一html注释间距
     'vue/html-comment-content-spacing': [
       'error',
       'always',
       {
-        exceptions: ['-'],
-      },
+        exceptions: ['-']
+      }
     ],
     // 块级标签强制换行
     'vue/block-tag-newline': [
       'error',
       {
         singleline: 'always',
-        multiline: 'always',
-      },
+        multiline: 'always'
+      }
     ],
     // 支持<template>中的注释指令
     'vue/comment-directive': 'off',
+    // 强制每行的最大属性数
+    'vue/max-attributes-per-line': 'off',
 
     /* -------------->  Extensions       <-------------- */
     // 强制括号内使用空格
@@ -117,6 +119,6 @@ module.exports = {
     // 禁止或强制在代码块中开括号前和闭括号后有空格
     'vue/block-spacing': ['error', 'always'],
     // 大括号风格要求
-    'vue/brace-style': ['error', 'stroustrup', { allowSingleLine: true }],
-  },
+    'vue/brace-style': ['error', 'stroustrup', { allowSingleLine: true }]
+  }
 };

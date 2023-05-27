@@ -2,12 +2,12 @@ module.exports = {
   env: {
     es6: true,
     browser: true,
-    node: true,
+    node: true
   },
   globals: {
     document: 'readonly',
     navigator: 'readonly',
-    window: 'readonly',
+    window: 'readonly'
   },
   ignorePatterns: [
     '*.min.*',
@@ -21,27 +21,27 @@ module.exports = {
     'temp',
     'package-lock.json',
     'pnpm-lock.yaml',
-    'yarn.lock',
+    'yarn.lock'
   ],
   reportUnusedDisableDirectives: true,
   extends: [
     'plugin:import/recommended',
     'plugin:jsonc/recommended-with-jsonc',
-    'plugin:markdown/recommended',
+    'plugin:markdown/recommended'
   ],
   plugins: ['html'],
   settings: {
     'import/resolver': {
-      node: { extensions: ['.js', '.mjs'] },
-    },
+      node: { extensions: ['.js', '.mjs'] }
+    }
   },
   // 在 eslint 中支持异步函数 https://github.com/eslint/eslint/issues/8366
   parserOptions: {
     ecmaVersion: 2022,
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
-    sourceType: 'module',
+    sourceType: 'module'
   },
   overrides: [
     {
@@ -56,8 +56,8 @@ module.exports = {
         'jsonc/no-octal-escape': 'error',
         'jsonc/object-curly-newline': ['error', { multiline: true, consistent: true }],
         'jsonc/object-curly-spacing': ['error', 'always'],
-        'jsonc/object-property-newline': ['error', { allowMultiplePropertiesPerLine: true }],
-      },
+        'jsonc/object-property-newline': ['error', { allowMultiplePropertiesPerLine: true }]
+      }
     },
     {
       files: ['package.json'],
@@ -110,25 +110,25 @@ module.exports = {
               'husky',
               'simple-git-hooks',
               'lint-staged',
-              'eslintConfig',
-            ],
+              'eslintConfig'
+            ]
           },
           {
             pathPattern: '^(?:dev|peer|optional|bundled)?[Dd]ependencies$',
-            order: { type: 'asc' },
+            order: { type: 'asc' }
           },
           {
             pathPattern: '^exports.*$',
-            order: ['types', 'require', 'import'],
-          },
-        ],
-      },
+            order: ['types', 'require', 'import']
+          }
+        ]
+      }
     },
     {
       files: ['*.d.ts'],
       rules: {
-        'import/no-duplicates': 'off',
-      },
+        'import/no-duplicates': 'off'
+      }
     },
     {
       // 忽略检查md文件代码块
@@ -145,9 +145,9 @@ module.exports = {
         'no-restricted-imports': 'off',
         'no-undef': 'off',
         'no-unused-expressions': 'off',
-        'no-unused-vars': 'off',
-      },
-    },
+        'no-unused-vars': 'off'
+      }
+    }
   ],
   rules: {
     /* -------------->  错误逻辑相关  <-------------- */
@@ -166,8 +166,8 @@ module.exports = {
       'single',
       {
         avoidEscape: true,
-        allowTemplateLiterals: true,
-      },
+        allowTemplateLiterals: true
+      }
     ],
     // 是否禁用分号
     semi: [2, 'always'],
@@ -270,8 +270,8 @@ module.exports = {
       'error',
       {
         argsIgnorePattern: '^_',
-        varsIgnorePattern: '^_',
-      },
+        varsIgnorePattern: '^_'
+      }
     ],
 
     /* -------------->      ES6      <-------------- */
@@ -341,6 +341,6 @@ module.exports = {
     // 报告使用导出名称作为默认导出标识符
     'import/no-named-as-default': 'off',
     // 禁止命名空间
-    'import/namespace': 'off',
-  },
+    'import/namespace': 'off'
+  }
 };

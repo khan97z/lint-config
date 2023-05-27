@@ -5,12 +5,12 @@ module.exports = {
   extends: [
     '@faxjs/eslint-config-base',
     'plugin:import/typescript',
-    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended'
   ],
   settings: {
     'import/resolver': {
-      node: { extensions: ['.js', '.jsx', '.mjs', '.ts', '.tsx', '.d.ts'] },
-    },
+      node: { extensions: ['.js', '.jsx', '.mjs', '.ts', '.tsx', '.d.ts'] }
+    }
   },
   overrides: base.overrides,
   rules: {
@@ -26,15 +26,15 @@ module.exports = {
     // 强制一致使用类型导入
     '@typescript-eslint/consistent-type-imports': [
       'error',
-      { prefer: 'type-imports', disallowTypeAnnotations: false },
+      { prefer: 'type-imports', disallowTypeAnnotations: false }
     ],
     // 禁止出现未使用过的变量
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
         argsIgnorePattern: '^_',
-        varsIgnorePattern: '^_',
-      },
+        varsIgnorePattern: '^_'
+      }
     ],
     // 强制大括号风格要求
     'brace-style': 'off',
@@ -49,6 +49,6 @@ module.exports = {
     // 禁止使用特定类型
     '@typescript-eslint/ban-types': 'off',
     // 禁止 `require` 语句，除了在 import 语句中
-    '@typescript-eslint/no-var-requires': 'off',
-  },
+    '@typescript-eslint/no-var-requires': 'off'
+  }
 };

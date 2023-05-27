@@ -1,14 +1,14 @@
 module.exports = {
   settings: {
     react: {
-      version: 'detect',
-    },
+      version: 'detect'
+    }
   },
 
   extends: [
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
-    '@faxjs/eslint-config-ts',
+    '@faxjs/eslint-config-ts'
   ],
   plugins: ['react', 'react-hooks'],
   rules: {
@@ -48,6 +48,6 @@ module.exports = {
     'react/jsx-key': 'warn',
 
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'off',
-  },
+    'react-hooks/exhaustive-deps': 'off'
+  }
 };

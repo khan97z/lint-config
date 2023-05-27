@@ -1,6 +1,6 @@
 {
   "name": "@faxjs/prettier-config",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "prettier config of faxjs",
   "homepage": "https://github.com/khan97z/lint-config/tree/master/packages/prettier/README.md",
   "main": "index.js",

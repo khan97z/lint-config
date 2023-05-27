@@ -13,13 +13,13 @@ module.exports = {
     'stylelint-config-recess-order',
     // 接入 Prettier 规则
     'stylelint-config-prettier',
-    'stylelint-prettier/recommended',
+    'stylelint-prettier/recommended'
   ],
   // 配置 rules
   rules: {
     // 开启 Prettier 自动格式化功能
     'prettier/prettier': true,
     'selector-class-pattern': null,
-    'no-descending-specificity': null,
-  },
+    'no-descending-specificity': null
+  }
 };

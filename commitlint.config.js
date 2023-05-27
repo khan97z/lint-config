@@ -30,6 +30,6 @@ module.exports = {
     // 如果 defaultScope 与在选择范围列表项中的 value 相匹配就会进行星标置顶操作。
     defaultScope: scopeComplete,
     // 描述预设值
-    defaultSubject: subjectComplete && `[${subjectComplete}] `,
-  },
+    defaultSubject: subjectComplete && `[${subjectComplete}] `
+  }
 };

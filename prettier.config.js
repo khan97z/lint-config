@@ -1,3 +1,3 @@
 module.exports = {
-  ...require('@faxjs/prettier-config'),
+  ...require('@faxjs/prettier-config')
 };

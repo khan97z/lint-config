@@ -75,9 +75,9 @@ module.exports = {
         'revert',
         'chore',
         'wip',
-        'types',
-      ],
-    ],
+        'types'
+      ]
+    ]
   },
   prompt: {
     messages: {
@@ -90,7 +90,7 @@ module.exports = {
       footerPrefixsSelect: '选择关联issue前缀（可选）:',
       customFooterPrefixs: '输入自定义issue前缀 :',
       footer: '列举关联issue (可选) 例如: #31, #I3244 :\n',
-      confirmCommit: '是否提交或修改commit ?',
+      confirmCommit: '是否提交或修改commit ?'
     },
     types: [
       { value: 'feat', name: 'feat:     新增功能', emoji: '✨' },
@@ -102,22 +102,22 @@ module.exports = {
       {
         value: 'test',
         name: 'test:     添加疏漏测试或已有测试改动',
-        emoji: '✅',
+        emoji: '✅'
       },
       {
         value: 'build',
         name: 'build:    构建流程、外部依赖变更 (如升级 npm 包、修改打包配置等)',
-        emoji: '📦️',
+        emoji: '📦️'
       },
       { value: 'ci', name: 'ci:       修改 CI 配置、脚本', emoji: '🛠' },
       { value: 'revert', name: 'revert:   回滚 commit', emoji: '⏪️' },
       {
         value: 'chore',
         name: 'chore:    对构建过程或辅助工具和库的更改 (不影响源文件)',
-        emoji: '🔨',
+        emoji: '🔨'
       },
       { value: 'wip', name: 'wip:      正在开发中', emoji: '🚀' },
-      { value: 'types', name: 'types:    类型定义文件修改', emoji: '💡' },
+      { value: 'types', name: 'types:    类型定义文件修改', emoji: '💡' }
     ],
     // 是否允许使用Emoji
     useEmoji: true,
@@ -125,7 +125,7 @@ module.exports = {
     emojiAlign: 'center',
 
     allowEmptyIssuePrefixs: false,
-    allowCustomIssuePrefixs: false,
+    allowCustomIssuePrefixs: false
 
     /**
      * 高级配置需要自行添加
@@ -142,5 +142,5 @@ module.exports = {
     // defaultScope: scopeComplete,
     // // 描述预设值
     // defaultSubject: subjectComplete && `[${subjectComplete}] `,
-  },
+  }
 };

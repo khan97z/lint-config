@@ -27,5 +27,5 @@ module.exports = {
   // 为 HTML、Vue、Angular 和 Handlebars 指定全局空白敏感度
   htmlWhitespaceSensitivity: 'strict',
   // 行结束设置
-  endOfLine: 'auto',
+  endOfLine: 'auto'
 };
