@@ -1,5 +1,11 @@
 # @faxjs/eslint-config-vue
 
+## 1.0.10
+
+### Patch Changes
+
+- vue/singleline-html-element-content-newline, vue/v-on-event-hyphenation
+
 ## 1.0.9
 
 ### Patch Changes

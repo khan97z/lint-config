@@ -110,6 +110,17 @@ module.exports = {
     'vue/comment-directive': 'off',
     // 强制每行的最大属性数
     'vue/max-attributes-per-line': 'off',
+    // 需要在单行元素的内容前后换行
+    'vue/singleline-html-element-content-newline': 'off',
+    // 在模板中的自定义组件上强制执行 v-on 事件命名样式
+    'vue/v-on-event-hyphenation': [
+      'error',
+      'never',
+      {
+        autofix: true,
+        ignore: ['custom-event']
+      }
+    ],
 
     /* -------------->  Extensions       <-------------- */
     // 强制括号内使用空格
