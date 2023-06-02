@@ -121,6 +121,8 @@ module.exports = {
         ignore: ['custom-event']
       }
     ],
+    // 强制每个组件都应该在它自己的文件中
+    'vue/one-component-per-file': 'off',
 
     /* -------------->  Extensions       <-------------- */
     // 强制括号内使用空格
